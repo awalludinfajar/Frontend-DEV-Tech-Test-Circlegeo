@@ -1,0 +1,19 @@
+Untuk mengoptimalkan performa dan kecepatan sebuah web yang memiliki banyak file css dan javascript menurut saya ada beberapa cara untuk mengoptimalkannya yaitu :
+1. Jika kita menggunakan semisalnya library bootstrap mungkin baiknya menggunakan CDN(Content Delivery Network) yaitu asset yang berbasis internet sehingga file local kita lebih berkurang
+2. Menggunakan inline css file, yaitu melakukan penggabungan css file dalam 1 line/ 1 basis css di dalam 1 file css
+3. menghapus file yang sudah tidak terpakai dalam folder project kita dapat sedikit menambah performa dari website karena dapat mengurangi ukuran total halaman sehingga permintaan http bisa jadi lebih sedikit
+
+Salahsatu contoh implementasi pada nomo1 :
+- menggunakan CDN
+
+<head>
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+</head>
+
+Berikut merupakan penerapan CDN bootstrap untuk load data css nya dan biasanya di simpan dibagikan atas sebuah page html (didalam tag <head></head>
+
+- menggunakan inline css file
+
+<style>body{font-family:Arial;margin:0;padding:0;background:#f4f4f4;}</style>
+
+

@@ -1,0 +1,12 @@
+Untuk membuat keterjangkauan semua perangkat cara sederhana nya menggunakan pseudo-class :focus pada suatu class css yang berfungsi untuk membuat focus indikator untuk sebuah element yang difokuskan contoh penerapan nya pada css, dan juga menambahkan aria-label untuk menambahkan aksesibilitas suatu element dalam tag html
+
+button:focus {
+    outline: 2px solid #4CAF50;
+    outline-offset: 2px;
+}
+
+
+Contoh penggunaan aria-label
+<a href="#" aria-label="back to dashboard">
+    <img src="home-icon.png" alt="">
+</a>

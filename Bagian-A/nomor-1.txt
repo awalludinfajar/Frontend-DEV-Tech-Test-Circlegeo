@@ -1,0 +1,16 @@
+Untuk penerapannya menggunakan css Saya akan menggunakan Pseudo-class ":hover" untuk css dengan attribute "background-color" mungkin dengan wanna yang sama tetapi memiliki tingkat kecerahan yang lebih gelap berikut penerapan nya :
+
+.button {
+	background-color: #4CAF50;
+	text-align: center;
+	border: none;
+        border-radius: 5px;
+}
+
+//efek ketika button di sort
+.button:hover {
+	background-color: #45a049;
+}
+
+//dengan tag html berikut
+<button class="button">Hover!</button>
