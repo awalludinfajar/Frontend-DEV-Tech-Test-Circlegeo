@@ -31,6 +31,16 @@ watchEffect(async() => {
           'fill-outline-color': ['get', 'lineColor'],
         },
       });
+
+      map.value.addLayer({
+        id: 'polygon-otter',
+        type: 'line',
+        source: 'polygon-source',
+        paint: {
+            'line-color': ['get', 'lineColor'],
+            'line-width': 3
+        }
+      });
     }
   });
 });
