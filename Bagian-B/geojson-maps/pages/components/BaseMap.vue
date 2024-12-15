@@ -2,6 +2,7 @@
 import { Map } from 'maplibre-gl';
 import geoData from '~/public/test.json';
 import { shallowRef, onMounted, onUnmounted, markRaw } from 'vue';
+import maplibregl from 'maplibre-gl';
 import LineLayer from './Layers/LineLayer.vue';
 import PolygonLayer from './Layers/PolygonLayer.vue';
 import DefaultMarkerLayer from './Layers/DefaultMarkerLayer.vue';
@@ -30,6 +31,14 @@ export default {
                     center: [initialContry.lng, initialContry.lat],
                     zoom: initialContry.zoom
                 }));
+
+                map.value.addControl(
+                    new maplibregl.NavigationControl({
+                        visualizePitch: true,
+                        showZoom: true,
+                        showCompass: true,
+                    })
+                );
             }
         }), 
         onUnmounted(() => {
